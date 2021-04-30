@@ -3,15 +3,11 @@ package com.SpringTutorial.SpringTutorial;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
-import org.springframework.stereotype.Component;
 
 @SpringBootApplication
-public class SpringTutorialApplication 
-{
+public class SpringTutorialApplication {
 
-	public static void main(String[] args) 
-	{
-		
+	public static void main(String[] args) {
 		ApplicationContext applicaitonContext = 
 				SpringApplication.run(SpringTutorialApplication.class, args);
 		
@@ -25,7 +21,6 @@ public class SpringTutorialApplication
 		{
 			System.out.println(resultSearch);
 		}
-		
 	}
 
 }
