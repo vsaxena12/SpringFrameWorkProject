@@ -1,21 +1,21 @@
-package com.SpringTutorial.SpringTutorial;
+	package com.SpringTutorial.SpringTutorial;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-@Component
+@Component //Manage the beans -- Object managed by Spring IoC 
 public class SearchingAlgo {
 	//Sorting an array
 	//search an array
 	//return the result
 	
-	@Autowired
+	@Autowired //what are the dependencies between the beans
 	private SortAlgorithm sortAlgo;
 	
 	
 	public SearchingAlgo(SortAlgorithm sortAlgo)
 	{
-		//super();
+		super();
 		this.sortAlgo = sortAlgo;
 	}
 

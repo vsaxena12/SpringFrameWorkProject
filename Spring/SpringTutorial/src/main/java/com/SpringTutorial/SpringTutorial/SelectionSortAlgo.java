@@ -24,6 +24,7 @@ public class SelectionSortAlgo implements SortAlgorithm
             nums[min_idx] = nums[i];
             nums[i] = temp;
         }
+        System.out.println("Selection Sort: ");
 		return nums;
 	}
 	 

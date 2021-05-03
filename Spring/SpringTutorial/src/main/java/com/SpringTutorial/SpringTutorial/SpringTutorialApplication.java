@@ -8,12 +8,15 @@ import org.springframework.context.ApplicationContext;
 public class SpringTutorialApplication {
 
 	public static void main(String[] args) {
-		ApplicationContext applicaitonContext = 
+		
+		
+		//ApplicationContext manages the beans
+		ApplicationContext applicationContext = 
 				SpringApplication.run(SpringTutorialApplication.class, args);
 		
 		//SearchingAlgo search = new SearchingAlgo(new SelectionSortAlgo());
 		
-		SearchingAlgo search = applicaitonContext.getBean(SearchingAlgo.class);
+		SearchingAlgo search = applicationContext.getBean(SearchingAlgo.class);
 		
 		int result[] = search.binarySearch(new int[] {12,4,6,5,3});
 		
