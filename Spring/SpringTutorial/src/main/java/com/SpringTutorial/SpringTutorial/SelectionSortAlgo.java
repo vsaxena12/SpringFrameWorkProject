@@ -1,8 +1,10 @@
 package com.SpringTutorial.SpringTutorial;
 
+import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
 
 @Component
+@Primary
 public class SelectionSortAlgo implements SortAlgorithm
 {	
 	public int[] sort(int[] nums) {

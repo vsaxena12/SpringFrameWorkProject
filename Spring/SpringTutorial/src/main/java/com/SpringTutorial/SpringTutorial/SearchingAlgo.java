@@ -9,15 +9,22 @@ public class SearchingAlgo {
 	//search an array
 	//return the result
 	
-	@Autowired //what are the dependencies between the beans
+	//@Autowired //what are the dependencies between the beans
 	private SortAlgorithm sortAlgo;
 	
 	
-	public SearchingAlgo(SortAlgorithm sortAlgo)
+	@Autowired 
+	public void setter(SortAlgorithm sort)
 	{
-		super();
-		this.sortAlgo = sortAlgo;
+		this.sortAlgo = sort;
 	}
+	
+	
+	
+	/*
+	 * public SearchingAlgo(SortAlgorithm sortAlgo) { super(); this.sortAlgo =
+	 * sortAlgo; }
+	 */
 
 	public int[] binarySearch(int nums[])
 	{
