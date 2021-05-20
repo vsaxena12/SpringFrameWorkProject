@@ -37,9 +37,9 @@ public class SpringFrameworkApplication {
 				search1.search(new int[] {4,5,6,7,1,2,3}, 10);
 		System.out.println("Found the Search: "+findSearch);
 		
-		System.out.println(search1);
-		System.out.println(search2);
-		System.out.println(search3);
+		//System.out.println(search1);
+		//System.out.println(search2);
+		//System.out.println(search3);
 		
 		
 	}

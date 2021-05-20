@@ -1,5 +1,10 @@
 package com.SpringAssignment.SpringFramework.Basic;
 
+import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.config.ConfigurableBeanFactory;
@@ -27,6 +32,7 @@ public class SearchImpl {
 	 * public void setSort(SortAlgorithm sort) { this.sort = sort; }
 	 */
 
+	private Logger LOGGER = LoggerFactory.getLogger(this.getClass());
 
 	public boolean search(int[] numbers, int num)
 	{
@@ -46,6 +52,18 @@ public class SearchImpl {
 		
 		return false;
 		
+	}
+	
+	@PostConstruct
+	public void postConstruct()
+	{
+		LOGGER.info("PostConstruct");
+	}
+	
+	@PreDestroy
+	public void preDestroy()
+	{
+		LOGGER.info("preDestroy");
 	}
 
 }
