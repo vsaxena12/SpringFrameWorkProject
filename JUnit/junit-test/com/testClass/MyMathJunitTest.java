@@ -1,6 +1,7 @@
 package com.testClass;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.fail;
 
 import org.junit.After;
 import org.junit.Before;
@@ -26,9 +27,9 @@ class MyMathJunitTest {
 	
 	@Test
 	void testONE() {
-		//fail("Not yet implemented");
-		System.out.println("Test1");
-		assertEquals(6, math.sum(new int[] {1,2,3}));
+		fail("Not yet implemented");
+		//System.out.println("Test1");
+		//assertEquals(6, math.sum(new int[] {1,2,3}));
 	}
 	
 	@Test
